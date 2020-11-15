@@ -1,0 +1,396 @@
+<html>
+<head>
+	<title>JASPA</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/3b23dca747.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/3b23dca747.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<style type="text/css">
+
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Source+Sans+Pro:wght@200;300;400;600;900&display=swap');
+
+		.sidenav {
+		  position: fixed;
+		  width: 18%;
+		  height: 100%;
+		  background-color: #131515;
+		}
+		.sidenav .main-buttons {
+		  list-style-type: none;
+		  margin: 64px 0;
+		  padding: 0;
+		  color: #fff;
+		}
+		.sidenav .main-buttons li {
+		  text-transform: uppercase;
+		  letter-spacing: 2px;
+		  font-family: 'Open Sans', sans-serif;
+		  font-size: 15px;
+		  font-weight: 600;
+		}
+		.sidenav .main-buttons > li {
+		  padding: 16px 52px;
+		  -moz-box-sizing: border-box;
+		  -webkit-box-sizing: border-box;
+		  box-sizing: border-box;
+		}
+		.sidenav .main-buttons > li .fa {
+		  position: absolute;
+		  left: 12px;
+		  color: #414655;
+		}
+		.sidenav .main-buttons > li:hover, .sidenav .main-buttons > li:active, .sidenav .main-buttons > li:focus {
+		  background-color: #292c35;
+		  cursor: pointer;
+		}
+		.sidenav .main-buttons > li:hover .hidden, .sidenav .main-buttons > li:active .hidden, .sidenav .main-buttons > li:focus .hidden {
+		  width: 228px;
+		}
+
+		.hidden {
+		  width: 0;
+		  height: 100%;
+		  padding: 64px 0;
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  overflow: hidden;
+		  list-style-type: none;
+		  background-color: #292c35;
+		  -moz-transition: 0.3s;
+		  -o-transition: 0.3s;
+		  -webkit-transition: 0.3s;
+		  transition: 0.3s;
+		}
+		.hidden li {
+		  padding: 16px 24px;
+		}
+		.hidden li:hover, .hidden li:active, .hidden li:focus {
+		  background-color: #323541;
+		}
+
+		body {
+		  background-color: #FBF5F3;
+		  line-height: 30px;
+		  margin: 0;
+		}
+
+
+		a, a:visited, a:hover, a:active {
+  		  color: inherit;
+  		  text-decoration: none;
+		}
+
+		/***This is where you insert the design for any part of the webpage aside from the sidebar**/
+
+		.paragraph{
+			text-align: justify;
+			font-family: 'Roboto', sans-serif;
+			font-size: 17px;
+			width: 92%;
+		}
+
+		.main_header{
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 50px;
+			font-weight: 900;
+		}
+
+		.header{
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 30px;
+			font-weight: 600;
+		}
+
+	</style>
+</head>
+<body>
+	<nav class="sidenav">
+	    <ul class="main-buttons">
+	      <a href="../index.html"><li>
+	        <i class="fa fa-circle fa-2x"></i>
+	        HOME</a>
+	      </li>
+	      <li>
+	      	<a href="../aboutme.html">
+	        <i class="fa fa-circle fa-2x"></i>
+	        ABOUT ME </a>
+	      </li>
+	       <li>
+	      	<a href="learnings.html">
+	        <i class="fa fa-circle fa-2x"></i>
+	        LEARNINGS </a>
+	      </li>
+	      <li>
+	        <i class="fa fa-circle fa-2x"></i>
+	        ACTIVITIES
+	        <ul class="hidden">
+	          <a href="../activities.html"><li>OVERVIEW</li></a>
+	          <a href="a1.html"><li>A1: Favorite application</li></a>
+	          <a href="a2.html"><li>A2: Persons </li></a>
+	          <a href="a3.html"><li>A3: Prototype</li></a>
+	          <a href="a4.html"><li>A4: Invitation design</li></a>
+	          <a href="a5.html"><li>A5: Grid design problem</li></a>
+	          <a href="a6.html"><li>A6: Game Day</li></a>
+	          <a href="a7.html"><li>A7: Personal website report</li></a>
+	        </ul>
+	      </li>
+	      <li>
+	        <i class="fa fa-circle fa-2x"></i>
+	         REFLECTION
+	         <ul class="hidden">
+	          <a href="../reflections.html"><li>OVERVIEW</li></a>
+	          <a href="../reflection/r1.html"><li>R1: My first few weeks</li></a>
+	          <a href="../reflection/r2.html"><li>R2: Intro to design thinking process</li></a>
+	          <a href="../reflection/r3.html"><li>R3: Need Finding</li></a>
+	          <a href="../reflection/r4.html"><li>R4: Information Architecture</li></a>
+	          <a href="../reflection/r5.html"><li>R5: Visual Design Problem</li></a>
+	        </ul>
+	      </li>
+	      <li>
+	        <i class="fa fa-circle fa-2x"></i>
+	        GUIDE QUESTIONS
+	        <ul class="hidden">
+	          <a href="../guide.html"><li>OVERVIEW</li></a>
+	          <a href="../guide/g1.html"><li>G1: User Design</li></a>
+	          <a href="../guide/g2.html"><li>G1: What is design thinking</li></a>
+	          <a href="../guide/g3.html"><li>G3: What is prototyping</li></a>
+	        </ul>
+	      </li>
+	    </ul>
+	</nav>
+	<div style="margin-left: 18%; padding-top: 40px; margin-bottom: 100px;">
+		<div style="margin-left: 10%; float:left; margin-bottom: 100px;">
+			<p class="main_header">A6: GAME DAY</p><br>
+			<span>
+				<p class="header">GAME 1: KERN TYPE, THE KERNING GAME</p>
+					<p class="paragraph">
+						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						  <ol class="carousel-indicators">
+						    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img class="d-block w-100" src="game/g1/p1.png" alt="First slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g1/p2.png" alt="Second slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g1/p3.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g1/p4.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g1/p5.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g1/p6.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g1/p7.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g1/p8.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g1/p9.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g1/p10.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g1/p11.png" alt="Third slide">
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</p>
+
+					<br>
+					<p class="header">GAME 2: BRANDSEEN</p>
+					<p class="paragraph">
+						<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+						  <ol class="carousel-indicators">
+						    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+						    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+						    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+						    <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+						    <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+						    <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+						    <li data-target="#carouselExampleIndicators2" data-slide-to="6"></li>
+						    <li data-target="#carouselExampleIndicators2" data-slide-to="7"></li>
+						    <li data-target="#carouselExampleIndicators2" data-slide-to="8"></li>
+						    <li data-target="#carouselExampleIndicators2" data-slide-to="9"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img class="d-block w-100" src="game/g2/p1.png" alt="First slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g2/p2.png" alt="Second slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g2/p3.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g2/p4.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g2/p5.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g2/p6.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g2/p7.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g2/p8.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g2/p9.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g2/p10.png" alt="Third slide">
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</p>
+
+					<br>
+					<p class="header">GAME 3: BETTER WEB TYPE</p>
+					<p class="paragraph">
+						<div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+						  <ol class="carousel-indicators">
+						    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+						    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+						    <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+						    <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+						    <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+						    <li data-target="#carouselExampleIndicators3" data-slide-to="5"></li>
+						    <li data-target="#carouselExampleIndicators3" data-slide-to="6"></li>
+						    <li data-target="#carouselExampleIndicators3" data-slide-to="7"></li>
+						    <li data-target="#carouselExampleIndicators3" data-slide-to="8"></li>
+						    <li data-target="#carouselExampleIndicators3" data-slide-to="9"></li>
+						    <li data-target="#carouselExampleIndicators3" data-slide-to="9"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img class="d-block w-100" src="game/g3/p1.png" alt="First slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g3/p2.png" alt="Second slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g3/p3.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g3/p4.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g3/p5.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g3/p6.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g3/p7.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g3/p8.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g3/p9.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g3/p10.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g3/p11.png" alt="Third slide">
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</p>
+
+					<br>
+					<p class="header">GAME 4: TYPE WAR</p>
+					<p class="paragraph">
+						<div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+						  <ol class="carousel-indicators">
+						    <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+						    <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+						    <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+						    <li data-target="#carouselExampleIndicators4" data-slide-to="3"></li>
+						    <li data-target="#carouselExampleIndicators4" data-slide-to="4"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img class="d-block w-100" src="game/g4/p1.png" alt="First slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g4/p2.png" alt="Second slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g4/p3.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g4/p4.png" alt="Third slide">
+						    </div>
+						    <div class="carousel-item">
+						      <img class="d-block w-100" src="game/g4/p5.png" alt="Third slide">
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</p>
+			</span>
+		</div>
+	</div>
+</body>
+</html>
