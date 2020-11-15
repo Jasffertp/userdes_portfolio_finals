@@ -1,0 +1,138 @@
+<html>
+<head>
+	<title>JASPA</title>
+	<script src="https://kit.fontawesome.com/3b23dca747.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/3b23dca747.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+
+		.sidenav {
+		  position: fixed;
+		  width: 18%;
+		  height: 100%;
+		  background-color: #131515;
+		}
+		.sidenav .main-buttons {
+		  list-style-type: none;
+		  margin: 64px 0;
+		  padding: 0;
+		  color: #fff;
+		}
+		.sidenav .main-buttons li {
+		  text-transform: uppercase;
+		  letter-spacing: 2px;
+		  font-family: 'Open Sans', sans-serif;
+		  font-size: 15px;
+		  font-weight: 600;
+		}
+		.sidenav .main-buttons > li {
+		  padding: 16px 52px;
+		  -moz-box-sizing: border-box;
+		  -webkit-box-sizing: border-box;
+		  box-sizing: border-box;
+		}
+		.sidenav .main-buttons > li .fa {
+		  position: absolute;
+		  left: 12px;
+		  color: #414655;
+		}
+		.sidenav .main-buttons > li:hover, .sidenav .main-buttons > li:active, .sidenav .main-buttons > li:focus {
+		  background-color: #292c35;
+		  cursor: pointer;
+		}
+		.sidenav .main-buttons > li:hover .hidden, .sidenav .main-buttons > li:active .hidden, .sidenav .main-buttons > li:focus .hidden {
+		  width: 228px;
+		}
+
+		.hidden {
+		  width: 0;
+		  height: 100%;
+		  padding: 64px 0;
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		  overflow: hidden;
+		  list-style-type: none;
+		  background-color: #292c35;
+		  -moz-transition: 0.3s;
+		  -o-transition: 0.3s;
+		  -webkit-transition: 0.3s;
+		  transition: 0.3s;
+		}
+		.hidden li {
+		  padding: 16px 24px;
+		}
+		.hidden li:hover, .hidden li:active, .hidden li:focus {
+		  background-color: #323541;
+		}
+
+		body {
+		  background-color: #FBF5F3;
+		  line-height: 30px;
+		  margin: 0;
+		}
+
+
+		a, a:visited, a:hover, a:active {
+  		  color: inherit;
+  		  text-decoration: none;
+		}
+
+		/***This is where you insert the design for any part of the webpage aside from the sidebar**/
+
+	</style>
+</head>
+<body>
+	<nav class="sidenav">
+	    <ul class="main-buttons">
+	      <a href="index.html"><li>
+	        <i class="fa fa-circle fa-2x"></i>
+	        HOME</a>
+	      </li>
+	      <li>
+	      	<a href="aboutme.html">
+	        <i class="fa fa-circle fa-2x"></i>
+	        ABOUT ME </a>
+	      </li>
+	      <li>
+	        <i class="fa fa-circle fa-2x"></i>
+	        ACTIVITIES
+	        <ul class="hidden">
+	          <a href="activities.html"><li>OVERVIEW</li></a>
+	          <li>A1: Favorite application</li>
+	          <li>A2: Persons </li>
+	          <li>A3: Prototype</li>
+	        </ul>
+	      </li>
+	      <li>
+	        <i class="fa fa-circle fa-2x"></i>
+	         REFLECTION
+	         <ul class="hidden">
+	          <a href="reflections.html"><li>OVERVIEW</li></a>
+	          <a href="r1.html"><li>R1: My first few weeks</li></a>
+	          <li>R2: Intro to design thinking process</li>
+	          <li>R3: Need Finding</li>
+	        </ul>
+	      </li>
+	      <li>
+	        <i class="fa fa-circle fa-2x"></i>
+	        GUIDE QUESTIONS
+	        <ul class="hidden">
+	          <a href="guide.html"><li>OVERVIEW</li></a>
+	          <li>G1: User Design</li>
+	          <li>G1: What is design thinking</li>
+	          <li>G3: What is prototyping</li>
+	        </ul>
+	      </li>
+	    </ul>
+	</nav>
+	<div style="margin-left: 18%; padding-top: 200px;">
+		<div style="margin-left: 10%; float:left;">
+			
+		</div>
+	</div>
+</body>
+</html>
